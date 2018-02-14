@@ -57,31 +57,33 @@ void select_led ( int led_index ) {
    
   }else if( led_index == 2) {
     
-    digitalWrite(D1, HIGH);  // Controls D1 / 
+    digitalWrite(D1, HIGH);  
     digitalWrite(D2, LOW);  // Turn 2,3rd and 4th LED off or High !
     digitalWrite(D3, HIGH);
     digitalWrite(D4, HIGH);
   
   }else if( led_index == 3) {
     
-    digitalWrite(D1, HIGH);  // Controls D1 / 
+    digitalWrite(D1, HIGH);  
     digitalWrite(D2, HIGH);  // Turn 2,3rd and 4th LED off or High !
     digitalWrite(D3, LOW);
     digitalWrite(D4, HIGH);
   
   }else if( led_index == 4) {
-    digitalWrite(D1, HIGH);  // Controls D1 / 
+    digitalWrite(D1, HIGH);  
     digitalWrite(D2, HIGH);  // Turn 2,3rd and 4th LED off or High !
     digitalWrite(D3, HIGH);
     digitalWrite(D4, LOW );
   
   }else if( led_index == 5) {
-    digitalWrite(D1, LOW);  // Controls D1 / 
-    digitalWrite(D2, LOW);  // Turn 2,3rd and 4th LED off or High !
+    digitalWrite(D1, LOW);  // This flag indicates to turn on all the LEDs.
+    digitalWrite(D2, LOW);  
     digitalWrite(D3, LOW);
     digitalWrite(D4, LOW);
   }
 }
+
+// Function to print just the number 1.
 void print_one ( ) {
 
   
